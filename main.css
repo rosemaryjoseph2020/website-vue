@@ -1,0 +1,446 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgba(245, 245, 245, 0.2);
+  cursor: default;
+  font-size: 62.5%;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+h1 {
+  color: #fff;
+  font: 2.7rem "MisoRegular";
+  letter-spacing: 5px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+    0 0 20px rgba(4, 4, 4, 0.8), 0 0 30px rgba(4, 4, 4, 0.8),
+    0 0 40px rgba(4, 4, 4, 0.8), 0 0 50px rgba(4, 4, 4, 0.8),
+    0 0 75px rgba(4, 4, 4, 0.8);
+}
+
+h2,
+h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.9);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+img[src="./src/img/nyy.png"] {
+  width: 15px;
+}
+
+img[src="./src/img/nym.png"] {
+  width: 15px;
+}
+
+img[src="./src/img/nyj.png"] {
+  width: 25px;
+}
+
+img[src="./src/img/nyg.png"] {
+  width: 25px;
+}
+
+img[src="./src/img/nyk.png"] {
+  width: 20px;
+}
+
+img[src="./src/img/bro.png"] {
+  width: 20px;
+}
+
+img[src="./src/img/NFL.png"] {
+  display: block;
+  margin: 0 auto;
+  width: 12vw;
+}
+
+img[src="./src/img/MLB.png"] {
+  display: block;
+  margin: 0 auto;
+  width: 12vw;
+}
+
+img[src="./src/img/NBA.png"] {
+  display: block;
+  margin: 0 auto;
+  width: 12vw;
+}
+
+.title-images {
+  display: absolute;
+  z-index: -99;
+}
+
+#app {
+  margin-bottom: 5%;
+  margin-top: 200px;
+}
+
+/* Tab Interface Styling */
+
+.tab-button {
+  background: rgba(1, 51, 105, 0.6);
+  border: 1px solid rgb(22, 50, 126);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 5px 10px;
+  padding: 6px 10px;
+}
+.tab-button:first-child {
+  margin-left: 45px;
+}
+
+.tab-button:hover {
+  background: rgba(1, 51, 105, 0.8);
+}
+
+.tab-button.active {
+  background: rgba(1, 51, 105, 0.4);
+}
+
+.tab {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+span.tab {
+  border: 0;
+}
+
+img.tab-image {
+  max-height: 75px;
+  max-width: 100px;
+}
+
+/* End Tab Stylings */
+
+a.nav-link {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+}
+
+.football {
+  margin-top: 40px;
+}
+
+.division-name {
+  color: #5a7ba6;
+  font-family: "Abril Fatface", cursive;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.division-name table {
+  all: initial;
+}
+
+th {
+  font-size: 0.7rem;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+th.season-stats-headers,
+td.season-stats-headers {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+thead th.stats-header {
+  color: rgba(0, 0, 0, 0.6);
+}
+th.col-12 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+th.category-header {
+  background-color: rgba(162, 207, 245, 0.9);
+  font-size: 0.6rem;
+  height: 0.6rem;
+  padding-bottom: 20px;
+}
+
+tr {
+  margin-bottom: 2px;
+}
+tr.header-row {
+  margin-top: 2px;
+}
+
+tr.season-stats {
+  margin-bottom: 15px;
+  box-shadow: 5px 10px 10px grey;
+}
+
+table td {
+  overflow-wrap: break-word;
+}
+
+td:not(:first-child) {
+  text-align: center;
+}
+
+td[title="Click for Season Stats"] {
+  cursor: pointer;
+  font-weight: 700;
+}
+td[title="Click for Season Stats"]:hover {
+  -webkit-text-decoration: underline solid blue;
+  background-color: lightgrey;
+  text-decoration: underline solid blue;
+}
+
+/* Vue Transition CSS Rules */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+/* End Vue Transition Rules */
+
+.box-score-status {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.team {
+  font-family: "Chonburi", cursive;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #010e1b;
+}
+
+.btn-group-sm > .btn,
+.btn-sm {
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.btn-group-sm > .btn,
+.btn-sm:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+team-logo {
+  display: inline;
+}
+
+.location {
+  background: rgba(196, 212, 235, 0.5);
+  font-size: 0.8rem;
+}
+
+.loading {
+  font-size: 1.5rem;
+  margin-right: 7px;
+}
+
+.cumlativeStatsLoading {
+  font-size: 0.7rem;
+  margin-right: 2px;
+}
+
+.inning-or-quarter-score {
+  font-family: "Lora", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 2px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.9);
+}
+
+.box-score-final {
+  font-family: "Lora", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 10px;
+  text-align: right;
+}
+
+.is-completed {
+  color: rgb(245, 45, 45);
+}
+
+.won {
+  color: goldenrod;
+}
+
+.footer {
+  align-items: center;
+  background-color: rgba(4, 69, 129, 0.925);
+  bottom: 0;
+  display: flex;
+  font-family: "Lora", sans-serif;
+  font-size: 1.2rem;
+  height: 5%;
+  justify-content: space-evenly;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+div .footer a {
+  color: rgba(171, 200, 245, 0.8);
+  text-decoration: none;
+  transition: all 0.5s;
+  width: 15%;
+}
+
+div .footer a[href="https://www.mlb.com"]:hover, div .footer a[href="https://www.nfl.com"]:hover, div .footer a[href="https://www.nba.com"]:hover {
+  color: rgba(171, 200, 245, 0.5);
+  font-size: 1.3rem;
+}
+
+div .footer a img {
+  margin-left: 7px;
+  max-height: 35px;
+  width: 50px;
+}
+
+/* ============= Spinner Stylings ================================ */
+
+@-webkit-keyframes spinner {
+  /* For Safari */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spin-it {
+  -webkit-animation: spinner 1s linear infinite;
+  /* Safari */
+  animation: spinner 1s linear infinite;
+}
+
+.fa-spinner {
+  color: #077784;
+  font-size: 1.7rem;
+}
+
+/* ============= End Spinner Stylings ============================ */
+
+/* ============== backToTop Stylings ================================= */
+
+.goTop {
+  background-color: #010e1b;
+  background-color: rgba(1, 14, 27, 0.7);
+  border: none;
+  border-radius: 50%;
+  bottom: 45px;
+  display: block;
+  height: 65px;
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  width: 65px;
+  z-index: -1;
+}
+
+.goTop .fa {
+  color: white;
+  font-size: 40px;
+}
+
+.goTop:hover {
+  background-color: #010e1b;
+  background-color: rgba(1, 14, 27, 0.9);
+  opacity: 1;
+}
+
+.isVisible {
+  opacity: 0.8;
+  transition: all 0.4s ease-in;
+  z-index: 99;
+}
+
+/* ========== End backToTop Stylings ============== */
+
+/* ========== Media Queries Below Here ================ */
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  #app {
+    margin-top: 25px;
+  }
+
+  .tab-button {
+    margin: 2px 5px;
+  }
+  .tab-button:first-child {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* For tablets: */
+  #app {
+    margin-top: 50px;
+  }
+
+  .tab-button {
+    margin: 2px 5px;
+  }
+  .tab-button:first-child {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  .footer {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div .footer a img {
+    margin-left: 4px;
+    max-height: 20px;
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div .footer a[href="https://www.mlb.com"]:hover, div .footer a[href="https://www.nfl.com"]:hover, div .footer a[href="https://www.nba.com"]:hover {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .goTop {
+    height: 55px;
+    width: 55px;
+  }
+}
